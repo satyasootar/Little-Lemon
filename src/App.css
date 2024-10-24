@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    margin: 1px;
+    font-size: 96px;
+    font-family: "Markazi Text";
+    font-optical-sizing: "auto";
+    font-weight: 400;
+    font-style: "normal";
+}
+
+.description{
+    font-size: 18px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: "auto";
+    font-weight: 400;
+    font-style: "normal";
+}
+.btn-1{
+    height: 52px;
+    width: 200px;
+    border-radius: 16px;
+    background-color: #F4CE14;
+    font-family: "Markazi Text";
+    font-optical-sizing: "auto";
+    font-weight: 500;
+    font-style: "normal";
+    font-size: 24px;
+    border: none;
+}
+
+.test{
+    border: 2px solid red;
+  
+}
+
+.h-card{
+    height: 432px;
+    width: 260.19px;
+    border-radius: 14.9px;
+    background-color:#eaeaea;
+}
+
+
+.t-card{
+    height: 362px;
+    width: 324px;
+    border-radius: 17px;
+    background-color: #e9e9e9;
+    padding: 12px;
+}
