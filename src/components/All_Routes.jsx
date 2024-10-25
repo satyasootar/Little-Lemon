@@ -2,6 +2,7 @@ import React from 'react'
 import { TableBooking }  from './TableBooking'
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './Home';
+import { Confirmation } from './Confirmation';
 export const AllRoutes = () => {
     const routes = [{
         path:"/",
@@ -10,6 +11,10 @@ export const AllRoutes = () => {
     {
         path:"/reservation",
         element: <TableBooking />
+    },
+    {
+        path:"/confirmation",
+        element: <Confirmation />
     }
 ]
 

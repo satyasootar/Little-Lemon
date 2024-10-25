@@ -29,6 +29,7 @@ body{
     font-style: "normal";
     font-size: 24px;
     border: none;
+    margin: 0 auto;
 }
 
 .btn-1:hover{
@@ -39,6 +40,7 @@ body{
     font-style: "normal";
     font-size: 24px;
     border: none;
+    cursor: pointer;
 }
 .link{
     text-decoration: none;
