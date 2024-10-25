@@ -1,5 +1,5 @@
 import React from 'react'
-import { TableBooking }  from './TableBooking'
+import { TableBookingParent }  from './TableBookingParent'
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './Home';
 import { Confirmation } from './Confirmation';
@@ -10,7 +10,7 @@ export const AllRoutes = () => {
     },
     {
         path:"/reservation",
-        element: <TableBooking />
+        element: <TableBookingParent />
     },
     {
         path:"/confirmation",
