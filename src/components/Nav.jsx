@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 
 export const Nav = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to manage drawer visibility
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -11,7 +11,7 @@ export const Nav = () => {
   const navStyles = {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-between", // Change to space-between for responsiveness
+    justifyContent: "space-between", 
     padding: "10px 80px",
     fontSize: "33px",
     fontFamily: "Markazi Text",
@@ -42,14 +42,14 @@ export const Nav = () => {
   const handleMouseEnter = (e) => {
     const span = e.currentTarget.querySelector('span');
     if (span) {
-      span.style.width = "100%"; // Expand underline on hover
+      span.style.width = "100%"; 
     }
   };
 
   const handleMouseLeave = (e) => {
     const span = e.currentTarget.querySelector('span');
     if (span) {
-      span.style.width = "0"; // Collapse underline when not hovering
+      span.style.width = "0"; 
     }
   };
 

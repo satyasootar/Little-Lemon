@@ -3,10 +3,10 @@ import { useLocation } from 'react-router-dom';
 
 export const Confirmation = () => {
   const location = useLocation();
-  const { form } = location.state || {}; // Get form data from the location state
+  const { form } = location.state || {}; 
 
   if (!form) {
-    return <div>No booking details found.</div>; // Handle case where no form data is available
+    return <div>No booking details found.</div>; 
   }
 
   return (
@@ -28,7 +28,7 @@ export const Confirmation = () => {
   );
 };
 
-// Styles
+
 const containerStyle = {
   display: 'flex',
   flexDirection: 'column',
@@ -51,7 +51,7 @@ const cardStyle = {
   color: 'white',
   width: '400px',
   boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
-  transition: 'transform 0.2s', /* Smooth transition for scaling effect */
+  transition: 'transform 0.2s', 
 };
 
 const headerStyle = {
@@ -63,5 +63,4 @@ const infoStyle = {
   margin: '20px 0',
 };
 
-// Export the component
 export default Confirmation;

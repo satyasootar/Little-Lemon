@@ -16,7 +16,7 @@ export const TableBooking = ({ availableTimes, dispatch, bookedTimes }) => {
     mobileNumber: '',
   });
 
-  const navigate = useNavigate(); // Hook for programmatic navigation
+  const navigate = useNavigate(); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +25,6 @@ export const TableBooking = ({ availableTimes, dispatch, bookedTimes }) => {
       [name]: value,
     }));
 
-    // Update available times based on selected date
     if (name === 'date') {
       dispatch({ type: 'UPDATE_DATE', payload: value });
     }
@@ -87,7 +86,7 @@ export const TableBooking = ({ availableTimes, dispatch, bookedTimes }) => {
         Book a Table
       </h2>
 
-      {/* Form inputs */}
+  
       <label>First name</label>
       <input
         type="text"
@@ -207,7 +206,7 @@ export const TableBooking = ({ availableTimes, dispatch, bookedTimes }) => {
   );
 };
 
-// Common style for all input fields
+
 const inputStyle = {
   width: '100%',
   padding: '10px',

@@ -1,7 +1,7 @@
 import React, { useReducer, useEffect, useState } from 'react';
 import TableBooking from './TableBooking';
 
-// Local available times data
+
 const localAvailableTimes = [
   '12:00 PM',
   '12:30 PM',
@@ -20,16 +20,16 @@ const localAvailableTimes = [
   '7:00 PM',
 ];
 
-// Initialize times
+
 const initializeTimes = () => {
-  return localAvailableTimes; // Return the local available times
+  return localAvailableTimes; 
 };
 
-// Update times reducer
+
 const updateTimes = (state, action) => {
   switch (action.type) {
     case 'UPDATE_DATE':
-      return localAvailableTimes; // Use local times regardless of the selected date
+      return localAvailableTimes;
     default:
       return state;
   }
@@ -37,17 +37,17 @@ const updateTimes = (state, action) => {
 
 export const TableBookingParent = () => {
   const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes());
-  const [bookedTimes, setBookedTimes] = useState([]); // State for booked times
+  const [bookedTimes, setBookedTimes] = useState([]); 
 
   useEffect(() => {
-    // Initialize available times on component mount
-    dispatch({ type: 'UPDATE_DATE', payload: null }); // You can pass null as payload since we are not using it
+    
+    dispatch({ type: 'UPDATE_DATE', payload: null });
   }, []);
 
   // Function to handle booking times
   const handleBooking = (time) => {
     if (!bookedTimes.includes(time)) {
-      setBookedTimes((prevBookedTimes) => [...prevBookedTimes, time]); // Add the new booked time
+      setBookedTimes((prevBookedTimes) => [...prevBookedTimes, time]);
     }
   };
 
@@ -57,7 +57,7 @@ export const TableBookingParent = () => {
         availableTimes={availableTimes} 
         dispatch={dispatch} 
         bookedTimes={bookedTimes} 
-        onBook={handleBooking} // Pass the booking handler to child component
+        onBook={handleBooking} 
       />
     </div>
   );

@@ -6,7 +6,6 @@ export const Carousel = () => {
     { src: "./images/Dish2.svg", alt: "Dish 2" },
     { src: "./images/Dish3.svg", alt: "Dish 3" },
     { src: "./images/Dish4.jpg", alt: "Dish 4" },
-    // Add more images if needed
   ];
 
   return (

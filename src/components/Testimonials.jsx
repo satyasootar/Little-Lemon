@@ -26,13 +26,3 @@ export const Testimonials = () => {
   );
 };
 
-// Add CSS styles for mobile responsiveness
-// const styles = {
-//   '@media (max-width: 768px)': {
-//     '.testimonials-container': {
-//       flexDirection: 'column', // Stack items on top of each other
-//       alignItems: 'center', // Center align items
-//       gap: '20px', // Adjust gap for better spacing
-//     },
-//   },
-// };
