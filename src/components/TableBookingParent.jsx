@@ -44,9 +44,21 @@ export const TableBookingParent = () => {
     dispatch({ type: 'UPDATE_DATE', payload: null }); // You can pass null as payload since we are not using it
   }, []);
 
+  // Function to handle booking times
+  const handleBooking = (time) => {
+    if (!bookedTimes.includes(time)) {
+      setBookedTimes((prevBookedTimes) => [...prevBookedTimes, time]); // Add the new booked time
+    }
+  };
+
   return (
     <div>
-      <TableBooking availableTimes={availableTimes} dispatch={dispatch} bookedTimes={bookedTimes} />
+      <TableBooking 
+        availableTimes={availableTimes} 
+        dispatch={dispatch} 
+        bookedTimes={bookedTimes} 
+        onBook={handleBooking} // Pass the booking handler to child component
+      />
     </div>
   );
 };
