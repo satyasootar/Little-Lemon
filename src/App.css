@@ -31,6 +31,20 @@ body{
     border: none;
 }
 
+.btn-1:hover{
+    background-color: #c6a811;
+    font-family: "Markazi Text";
+    font-optical-sizing: "auto";
+    font-weight: 500;
+    font-style: "normal";
+    font-size: 24px;
+    border: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+
 .test{
     border: 2px solid red;
   

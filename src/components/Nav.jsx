@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import React from 'react'
 export const Nav = () => {
   return (
@@ -9,10 +9,10 @@ export const Nav = () => {
             </div>
             <div className='links' >
                 <ul style={{display:"flex", gap:"32px", listStyle:"none"}} >
-                    <li>Home</li>
+                    <li><Link to='/' className='link' >Home</Link></li>
                     <li>About</li>
                     <li>Menu</li>
-                    <li>Reservation</li>
+                    <li><Link to='/reservation' className='link' >Reservation</Link></li>
                     <li>Order Online</li>
                     <li>LogIn</li>
                 </ul>

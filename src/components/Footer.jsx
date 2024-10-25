@@ -17,7 +17,7 @@ export const Footer = () => {
         <div>
           <h3>Navigation</h3>
           <ul style={listStyle}>
-            <li>Home</li>
+            <li>Homee</li>
             <li>About</li>
             <li>Menu</li>
             <li>Reservation</li>
