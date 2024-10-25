@@ -14,7 +14,7 @@ export const Nav = () => {
                     <li>Menu</li>
                     <li><Link to='/reservation' className='link' >Reservation</Link></li>
                     <li>Order Online</li>
-                    <li>LogIn</li>
+                    <li>Log In</li>
                 </ul>
             </div>
         </nav>
