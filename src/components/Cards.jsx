@@ -32,7 +32,7 @@ export const Cards = ({ img, title, pricing, description}) => {
           fontSize: "20px",
           fontFamily: "Inter",
           paddingLeft:"20px"
-        }} >Out of Delivery </p> 
+        }} >Home Delivery </p> 
         <img src='.\images\DeliveryIcon.svg' alt='logo'/>
         </div> 
       </div>

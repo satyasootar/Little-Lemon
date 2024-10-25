@@ -11,6 +11,10 @@ body{
     font-style: "normal";
 }
 
+.logo{
+    padding-top: 10px;
+}
+
 .description{
     font-size: 18px;
     font-family: "Karla", sans-serif;
@@ -59,6 +63,11 @@ body{
     background-color:#eaeaea;
 }
 
+.h-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: 0.7s ease-in-out;
+}
 
 .t-card{
     height: 362px;
@@ -66,4 +75,10 @@ body{
     border-radius: 17px;
     background-color: #e9e9e9;
     padding: 12px;
+}
+
+.t-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: 0.7s ease-in-out;
 }

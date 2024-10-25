@@ -3,6 +3,8 @@ import { TableBookingParent }  from './TableBookingParent'
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './Home';
 import { Confirmation } from './Confirmation';
+import { AboutPage } from './AboutPage';
+import { Menu } from './Menu';
 export const AllRoutes = () => {
     const routes = [{
         path:"/",
@@ -15,6 +17,14 @@ export const AllRoutes = () => {
     {
         path:"/confirmation",
         element: <Confirmation />
+    },
+    {
+        path:"/about",
+        element: <AboutPage />
+    },
+    {
+        path:"/menu",
+        element: <Menu />
     }
 ]
 
